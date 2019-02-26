@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col m3 hide-on-small-only"></div>
+  <form action="#" class="col s12 m6 wifi_container">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <div class="row">
+          <div class="input-field col m9 s12">
+            <select  id="wizard_<%= views[viewIndex].name %>_form_ssid"></select>
+            <label for="wizard_<%= views[viewIndex].name %>_form_ssid">WiFi</label>
+          </div>
+          <div class="col m3 s12" >
+            <span>
+              <a style="width:100%" class="waves-effect btn ttb-color-white" id="wizard_wifi_scan"><i class="material-icons">refresh</i></a>
+            </span>
+          </div>
+        </div>
+        <div class="row wifi_hide_on_non_secured">
+          <div class="input-field col s12">
+            <input placeholder="" id="wizard_<%= views[viewIndex].name %>_form_psswrd" type="password" class="validate">
+            <label for="wizard_<%= views[viewIndex].name %>_form_psswrd">Password</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="wizard_<%= views[viewIndex].name %>_footer" class="row">
+</div>

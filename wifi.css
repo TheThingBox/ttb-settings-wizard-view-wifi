@@ -1,0 +1,27 @@
+.wifi_container {
+  min-width: 400px;
+}
+
+#wizard_wifi_scan{
+  margin-top: 16px;
+}
+
+.wifi_hide_on_non_secured {
+  display: none;
+  margin-bottom: 0px
+}
+
+.wifi_hide_on_non_secured.is-visible {
+  display: block;
+  margin-bottom: 20px
+}
+
+@media (max-width: 600px) {
+  .wifi_container {
+    min-width: 200px;
+  }
+
+  #wizard_wifi_scan{
+    margin-top: 0px;
+  }
+}
