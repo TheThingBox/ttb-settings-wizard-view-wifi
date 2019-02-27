@@ -1,7 +1,7 @@
 const bodyParser = require('body-parser');
 const path = require('path')
 const fs = require('fs')
-const wifi_utils = require('ttbd-wifi-utils')({hydra_exec_host: "mosquitto"})
+const interface_utils = require('ttbd-interface-utils')({hydra_exec_host: "mosquitto"})
 
 const name = 'portal'
 var settingsPath = null
@@ -28,7 +28,7 @@ function init(app, apiToExpose, persistenceDir) {
 
   app.get(`${apiToExpose}/scan`, function(req, res){
     var _tout = false
-    wifi_utils.scan().then(data => {
+    interface_utils.scanWiFi().then(data => {
       res.send(data)
     })
   });
@@ -40,9 +40,9 @@ function init(app, apiToExpose, persistenceDir) {
     } else if(!data.ssid) {
       res.status(403).json({message: "Missing WiFi ssid", error: "no_ssid"})
     } else {
-      wifi_utils.setWiFi(data)
+      interface_utils.setWiFi(data)
       .then(() => {
-          stats.status - 'ok'
+          stats.status = 'ok'
           syncStats()
           res.json({message: `The WiFi ${data.ssid} has been set.`})
       })
@@ -82,5 +82,7 @@ module.exports = {
   syncStats: syncStats,
   order: 50,
   canIgnore: false,
-  enableAPOnWlan: wifi_utils.enableAPOnWlan
+  enableAPOnWlan: function(ssid){
+    return interface_utils.enableAcessPointOnWlan(ssid)
+  }
 }
