@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A module for the settings wizard route to use for thethingbox",
   "dependencies": {
-    "ttbd-wifi-utils": "github:TheThingBox/ttbd-wifi-utils#856a8c1"
+    "ttbd-wifi-utils": "github:TheThingBox/ttbd-wifi-utils#649107c"
   },
   "main": "api.js",
   "private": true
