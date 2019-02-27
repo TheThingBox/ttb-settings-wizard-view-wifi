@@ -26,6 +26,11 @@ ejs.renderFile(
   }
 )
 
+params.views[_wizard_view_wifi_index].getWifiPassphrase = function(pwd, ssid){
+  var derivedKey = CryptoJS.PBKDF2(pwd, ssid, { iterations: 4096, keySize: 256/32 } );
+  return CryptoJS.enc.Hex.stringify(derivedKey);
+}
+
 params.views[_wizard_view_wifi_index].post = function() {
   var request = new Request(params.views[_wizard_view_wifi_index].api)
 
@@ -35,7 +40,7 @@ params.views[_wizard_view_wifi_index].post = function() {
   } else {
     request.setData({
       ssid: form_params.wifi.ssid,
-      password: form_params.wifi.password,
+      password: params.views[_wizard_view_wifi_index].getWifiPassphrase(form_params.wifi.password, form_params.wifi.ssid),
       secured: form_params.wifi.secured
     })
   }
