@@ -1,7 +1,8 @@
 const bodyParser = require('body-parser');
 const path = require('path')
 const fs = require('fs')
-const interface_utils = require('ttbd-interface-utils')({hydra_exec_host: "mosquitto"})
+const InterfaceUtils = require('ttbd-interface-utils')
+const interface_utils = new InterfaceUtils({hydra_exec_host: "mosquitto"})
 
 const name = 'portal'
 var settingsPath = null
