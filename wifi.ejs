@@ -5,8 +5,8 @@
       <div class="card-content ttb-color-dark-grey-text">
         <div class="row">
           <div class="input-field col m9 s12">
-            <select  id="wizard_<%= views[viewIndex].name %>_form_ssid"></select>
-            <label for="wizard_<%= views[viewIndex].name %>_form_ssid">WiFi</label>
+            <select  id="wizard_<%= name %>_form_ssid"></select>
+            <label for="wizard_<%= name %>_form_ssid"><%= lang("form_wifi") %></label>
           </div>
           <div class="col m3 s12" >
             <span>
@@ -16,13 +16,13 @@
         </div>
         <div class="row wifi_hide_on_non_secured">
           <div class="input-field col s12">
-            <input placeholder="" id="wizard_<%= views[viewIndex].name %>_form_psswrd" type="password" class="validate">
-            <label for="wizard_<%= views[viewIndex].name %>_form_psswrd">Password</label>
+            <input placeholder="" id="wizard_<%= name %>_form_psswrd" type="password" class="validate">
+            <label for="wizard_<%= name %>_form_psswrd"><%= lang("form_password") %></label>
           </div>
         </div>
       </div>
     </div>
   </form>
 </div>
-<div id="wizard_<%= views[viewIndex].name %>_footer" class="row">
+<div id="wizard_<%= name %>_footer" class="row">
 </div>

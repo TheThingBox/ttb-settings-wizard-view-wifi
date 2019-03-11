@@ -1,0 +1,22 @@
+{
+  "name": "WiFi",
+  "form_wifi": "WiFi",
+  "form_password": "Password",
+  "isok_ssid_title": "WiFi",
+  "isok_ssid_corpus": "You have to choose a WiFi network.",
+  "isok_password_title": "Password",
+  "isok_password_corpus": "You have to set the WiFi password.",
+  "network": "Network",
+  "not_set": "not set",
+  "password": "Password",
+  "none": "none",
+  "scanning": "scanning ...",
+  "choose_network": "Choose your network :",
+  "scan_first": "First, start a scan.",
+  "free_wifi": "Open",
+  "secure_wifi": "Secured",
+  "answer_no_password": "You have to set the WiFi password",
+  "answer_no_ssid": "You have to choose a WiFi network",
+  "answer_cannot_set": "Cannot set the Wifi",
+  "answer_set": "The WiFi %{ssid} has been set"
+}

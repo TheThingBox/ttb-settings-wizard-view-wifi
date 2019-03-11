@@ -1,0 +1,22 @@
+{
+  "name": "WiFi",
+  "form_wifi": "WiFi",
+  "form_password": "Mot de passe",
+  "isok_ssid_title": "WiFi",
+  "isok_ssid_corpus": "Vous devez choisir un réseau WiFi.",
+  "isok_password_title": "Mot de passe",
+  "isok_password_corpus": "Vous devez renseigner le mot de passe du réseau WiFi.",
+  "network": "Réseau",
+  "not_set": "non renseigné",
+  "password": "Mot de passe",
+  "none": "aucun",
+  "scanning": "recherche en cours ...",
+  "choose_network": "Choisissez votre réseau :",
+  "scan_first": "Commencez par lancer une recherche.",
+  "free_wifi": "Ouvert",
+  "secure_wifi": "Sécurisé",
+  "answer_no_password": "Vous devez renseigner le mot de passe du réseau WiFi",
+  "answer_no_ssid": "Vous devez choisir un réseau WiFi",
+  "answer_cannot_set": "Le WiFi n'a pas pu être sélectionné",
+  "answer_set": "Le réseau WiFi %{ssid} a été sélectionné"
+}

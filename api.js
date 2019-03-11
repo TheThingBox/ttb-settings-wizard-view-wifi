@@ -37,18 +37,18 @@ function init(app, apiToExpose, persistenceDir) {
   app.post(apiToExpose, function(req, res){
     var data = req.body;
     if((data.secured === "true" || data.secured === true) && data.password === ""){
-      res.status(403).json({message: "Password should be filled", error: "no_password"})
+      res.json({message: "Error", key: "answer_no_password", params: {} })
     } else if(!data.ssid) {
-      res.status(403).json({message: "Missing WiFi ssid", error: "no_ssid"})
+      res.json({message: "Error", key: "answer_no_ssid", params: {} })
     } else {
       interface_utils.setWiFi(data)
       .then(() => {
           stats.status = 'ok'
           syncStats(true)
-          res.json({message: `The WiFi ${data.ssid} has been set.`})
+          res.json({message: "OK", key: "answer_set", params: { ssid: data.ssid } })
       })
       .catch( err => {
-        res.status(500).json({message:"Cannot set the Wifi", error: err})
+        res.json({message:"Error", key: "answer_cannot_set", params: {} })
       })
     }
   });
