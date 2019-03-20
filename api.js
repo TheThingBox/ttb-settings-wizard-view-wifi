@@ -87,8 +87,8 @@ module.exports = {
   init: init,
   getStats: getStats,
   syncStats: syncStats,
-  order: 50,
-  canIgnore: false,
+  order: 15,
+  canIgnore: true,
   enableAPOnWlan: function(ssid){
     return interface_utils.enableAcessPointOnWlan(ssid)
   }

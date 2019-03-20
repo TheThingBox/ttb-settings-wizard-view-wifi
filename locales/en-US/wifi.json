@@ -6,6 +6,7 @@
   "isok_ssid_corpus": "You have to choose a WiFi network.",
   "isok_password_title": "Password",
   "isok_password_corpus": "You have to set the WiFi password.",
+  "click_unignore": "Click to do not ignore this step",
   "network": "Network",
   "not_set": "not set",
   "password": "Password",

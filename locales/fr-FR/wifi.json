@@ -6,6 +6,7 @@
   "isok_ssid_corpus": "Vous devez choisir un réseau WiFi.",
   "isok_password_title": "Mot de passe",
   "isok_password_corpus": "Vous devez renseigner le mot de passe du réseau WiFi.",
+  "click_unignore": "Clique pour ne plus ignorer cette étape",
   "network": "Réseau",
   "not_set": "non renseigné",
   "password": "Mot de passe",
