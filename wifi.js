@@ -43,6 +43,7 @@ var VIEW_WIFI = function() {
           document.getElementById("wizard_wifi_scan").addEventListener('click', (e) => { this.wifiScanClick(e) });
           document.getElementById("wizard_wifi_form_ssid").addEventListener('change',  (e) => { this.wifiSSIDChange(e) });
           document.getElementById("wizard_wifi_form_psswrd").addEventListener('input',  (e) => { this.wifiPasswordChange(e) });
+          this.wifiScanClick()
           resolve()
         }
       })
