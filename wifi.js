@@ -95,8 +95,10 @@ var VIEW_WIFI = function() {
 
   Wifi.prototype.getResumed = function(){
     var _html = ''
-      var _liStyle = 'background-color: rgba(0, 0, 0, 0); border-bottom-width: 1px;'
-    if(this.form.secured === false){
+    var _liStyle = 'background-color: rgba(0, 0, 0, 0); border-bottom-width: 1px;'
+    if(this.form.ignore){
+      _html =  this.lang('resume_not_set')
+    } else if(this.form.secured === false){
       _html =  `
   <ul class="collection" style="border-width:0px">
     <li style="${_liStyle}" class="collection-header"><b>${this.lang('network')}</b><br/>${this.form.ssid || this.lang('not_set')}</li>
