@@ -20,5 +20,5 @@
   "answer_no_ssid": "Vous devez choisir un réseau WiFi",
   "answer_cannot_set": "Le WiFi n'a pas pu être sélectionné",
   "answer_set": "Le réseau WiFi %{ssid} a été sélectionné",
-  "resume_not_set": "Le WiFi ne sera pas utilisé."
+  "resume_not_set": "Le WiFi ne sera pas paramétré."
 }

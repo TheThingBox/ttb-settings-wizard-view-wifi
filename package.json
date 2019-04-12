@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A module for the settings wizard route to use for thethingbox",
   "dependencies": {
-    "ttbd-interface-utils": "github:TheThingBox/ttbd-interface-utils#d63337f"
+    "ttbd-interface-utils": "github:TheThingBox/ttbd-interface-utils#6dfcef9"
   },
   "main": "api.js"
 }
